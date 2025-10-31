@@ -1,0 +1,25 @@
+CREATE TABLE saleman (
+     saleman_id INTEGER PRIMARY KEY,
+     name TEXT,
+     city TEXT
+);
+INSERT INTO saleman (saleman_id, Name, City) VALUES
+(101,'john','london'),
+(102,'amit','delhi'),
+(103,'sarah','france'),
+(104,'mike','hydrabad');
+
+select * from Saleman;
+
+CREATE TABLE orders(
+    Order_ID INTEGER PRIMARY KEY,
+    Order_Date TEXT,
+    Amount INTEGER,
+    saleman_ID INTEGER
+);
+
+INSERT INTO orders (Order_ID, Order_date, Amount, saleman_ID) VALUES
+(1,'2024-10-10',5000,101),
+(2,'2024-10-12',7000,103),
+(3,'2024-10-14',3000,102),
+(4,'2024-10-16',4500,104)
