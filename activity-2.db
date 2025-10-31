@@ -1,0 +1,13 @@
+CREATE TABLE saleman (
+     saleman_id INTEGER PRIMARY KEY,
+     name TEXT,
+     city TEXT
+);
+INSERT INTO saleman (saleman_id, Name, City) VALUES
+(101,'john','london'),
+(102,'amit','delhi'),
+(103,'sarah','france'),
+(104,'mike','hydrabad');
+
+select * from Saleman;
+select Name from saleman;
