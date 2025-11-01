@@ -1,0 +1,35 @@
+CREATE TABLE STUDENT(
+     student_id INTEGER PRIMARY KEY,
+     name TEXT,
+     age INTEGER,
+     address TEXT
+);
+
+INSERT INTO STUDENT (student_id, name, age, address )VALUES
+(1, 'ram', 18, 'Delhi')
+(2, 'sarah', 23, 'tamil nadu')
+(3, 'emma', 29, 'Delhi')
+(4, 'jake', 19, 'france')
+(5, 'lilly', 38, 'Delhi')
+(6, 'rosaline', 27, 'Delhi')
+(7, 'frank', 19, 'Delhi')
+
+SELECT *
+FROM STUDENT 
+WHERE age = 18 AND adress = 'Delhi'
+
+SELECT *
+FROM STUDENT
+WHERE name = 'ram' AND age = 18;
+
+SELECT *
+FROM STUDENT
+WHERE name = 'ram' OR name = 'emma'
+
+SELECT *
+FROM STUDENT
+WHERE name = 'ram' OR age = 20;
+
+SELECT *
+FROM STUDENT 
+WHERE age = 18 AND (name = 'ram' OR name = 'sarah')
